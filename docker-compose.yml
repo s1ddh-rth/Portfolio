@@ -69,8 +69,8 @@ services:
     volumes:
       - ollama_data:/root/.ollama
     restart: unless-stopped
-    command: >
-      sh -c "ollama pull mistral && ollama serve"
+    entrypoint: ["/bin/ollama"]
+    command: ["serve"]
 
   qdrant:
     image: qdrant/qdrant:latest
