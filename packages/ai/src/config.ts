@@ -9,7 +9,7 @@ const configSchema = z.object({
   
   // LLM Configuration
   OLLAMA_URL: z.string().default('http://localhost:11434'),
-  OLLAMA_MODEL: z.string().default('llama2'),
+  OLLAMA_MODEL: z.string().default('mistral'),
   
   // API Keys & External Services
   GITHUB_TOKEN: z.string().optional(),
